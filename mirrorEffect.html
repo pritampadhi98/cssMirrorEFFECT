@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Mirror Reflection</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #111;
+    }
+
+    img {
+      width: 300px;
+      display: block;
+
+      /* Mirror reflection */
+      -webkit-box-reflect: below -5px
+        linear-gradient(
+          transparent,
+          rgba(0, 0, 0, 0.5)
+        );
+    }
+  </style>
+</head>
+<body>
+  <img
+    src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d"
+    alt="Mirror Effect"
+  />
+</body>
+</html>
